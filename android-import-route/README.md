@@ -14,4 +14,4 @@ Please do not forget: To run the app, you need to add your HERE SDK credentials 
 
 
 ## The result should be as follows:
-![Result of this demo app](result.png)
+![alt text](image.png)
