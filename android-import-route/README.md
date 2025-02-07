@@ -14,4 +14,4 @@ Please do not forget: To run the app, you need to add your HERE SDK credentials 
 
 
 ## The result should be as follows:
-![alt text](image.png)
+![result](https://github.com/user-attachments/assets/5fc60f12-9a4a-4794-b734-49c01c80fd02)
