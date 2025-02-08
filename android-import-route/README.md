@@ -1,7 +1,6 @@
 # Navigate SDK Use Case - Import Route 
 
-This example app is based on the Routing example app how to import a route that is visualized on the map. 
-You can find how this is done in [RoutingExample.java](app/src/main/java/com/here/routing/RoutingExample.java).
+The Routing example app shows how to calculate a route from A to B with a number of waypoints in between that is visualized on the map. You can find how this is done in [RoutingExample.java](app/src/main/java/com/here/routing/RoutingExample.java).
 
 
 ## Build instructions:
@@ -13,5 +12,9 @@ Note: This app is built and tested with heresdk-navigate-4.21.2.0.164754.release
 Please do not forget: To run the app, you need to add your HERE SDK credentials to the `MainActivity.java` file.
 
 
+## Change log
+
+1) Remov traffic optimization feature and adding waypoints feature.
+2) Add feature to remove the markers for waypoints.
+
 ## The result should be as follows:
-![alt text](image.png)

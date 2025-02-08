@@ -68,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initializeHERESDK() {
         // Set your credentials for the HERE SDK.
-        String accessKeyID = "your_access_key_id";
-        String accessKeySecret = "your_access_key_secret";
+        String accessKeyID = "R3UmP_jtBpueHBwhhO19UQ";
+        String accessKeySecret = "8FH1ivXkKClE_edJ-spoUllBiJYpvi5tpWatY10v0SQETmrnG6w2tfx1HSozJ0jxlFSbZixoQvDjy_juxCmC_g";
         AuthenticationMode authenticationMode = AuthenticationMode.withKeySecret(accessKeyID, accessKeySecret);
         SDKOptions options = new SDKOptions(authenticationMode);
         try {
@@ -123,12 +123,8 @@ public class MainActivity extends AppCompatActivity {
         routingExample.addRoute();
     }
 
-    public void toggleTrafficOptimization(View view) {
-        routingExample.toggleTrafficOptimization();
-    }
-
-    public void addWaypointsButtonClicked(View view) {
-        routingExample.addWaypoints();
+    public void removeWaypointsButtonClicked(View view) {
+        routingExample.removeWaypoints();
     }
 
     public void clearMapButtonClicked(View view) {

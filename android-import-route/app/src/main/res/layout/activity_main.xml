@@ -30,8 +30,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Add Waypoints"
-            android:onClick="addWaypointsButtonClicked" />
+            android:text="Remove Dots"
+            android:onClick="removeWaypointsButtonClicked" />
 
         <Button
             android:layout_width="0dp"
@@ -39,20 +39,6 @@
             android:layout_weight="1"
             android:text="Clear Map"
             android:onClick="clearMapButtonClicked" />
-    </LinearLayout>
-    <LinearLayout
-        app:layout_constraintTop_toBottomOf="@id/firstRow"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ToggleButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textOff="Traffic optimization -On"
-            android:textOn="Traffic optimization -Off"
-            android:onClick="toggleTrafficOptimization" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -64,7 +64,6 @@ import com.here.sdk.routing.SectionNotice;
 import com.here.sdk.routing.Span;
 import com.here.sdk.routing.Toll;
 import com.here.sdk.routing.TollFare;
-import com.here.sdk.routing.TrafficOptimizationMode;
 import com.here.sdk.routing.Waypoint;
 import com.here.time.Duration;
 
@@ -85,7 +84,6 @@ public class RoutingExample {
     private final RoutingEngine routingEngine;
     private GeoCoordinates startGeoCoordinates;
     private GeoCoordinates destinationGeoCoordinates;
-    private boolean trafficDisabled;
     private final TimeUtils timeUtils;
     List<Waypoint> waypoints = new ArrayList<>();
     List<Location> locations = Arrays.asList (
@@ -162,6 +160,8 @@ public class RoutingExample {
     }
 
     public void addRoute() {
+        startGeoCoordinates = new GeoCoordinates(29.65867663733661, 75.22938659414649);
+        destinationGeoCoordinates = new GeoCoordinates(29.5131814, 75.4509532);
         calculateRoute(locations);
     }
 
@@ -220,15 +220,6 @@ public class RoutingExample {
             }
         }
     }
-
-    public void toggleTrafficOptimization() {
-        trafficDisabled = !trafficDisabled;
-        if (!waypoints.isEmpty()) {
-            calculateRoute(locations);
-        }
-        Toast.makeText(context, "Traffic optimization is " + (trafficDisabled ? "Disabled" : "Enabled"), Toast.LENGTH_LONG).show();
-    }
-
 
     private String toString(GeoCoordinates geoCoordinates) {
         return geoCoordinates.latitude + ", " + geoCoordinates.longitude;
@@ -337,9 +328,6 @@ public class RoutingExample {
         mapView.getMapScene().addMapPolyline(routeMapPolyline);
         mapPolylines.add(routeMapPolyline);
 
-        // Optionally, render traffic on route.
-        showTrafficOnRoute(route);
-
         // Log maneuver instructions per route section.
         List<Section> sections = route.getSections();
         for (Section section : sections) {
@@ -352,12 +340,17 @@ public class RoutingExample {
         for (int i = 0; i < n; i++) {
             GeoCoordinates currentGeoCoordinates = locations.get(i).coordinates;
             if (i == 0 || i == n - 1) {
-                // Draw a green circle to indicate starting point and destination.
                 addCircleMapMarker(currentGeoCoordinates, R.drawable.green_dot);
             } else {
-                // Draw a red circle to indicate intermediate waypoints, if any.
                 addCircleMapMarker(currentGeoCoordinates, R.drawable.red_dot);
             }
+        }
+    }
+
+    private void hideWaypointsOnMap(List<MapMarker> mapMarkerList) {
+        int n = mapMarkerList.size();
+        for (int i = 1; i < n-1; i++) {
+            mapView.getMapScene().removeMapMarker(mapMarkerList.get(i));
         }
     }
 
@@ -374,27 +367,13 @@ public class RoutingExample {
         }
     }
 
-    public void addWaypoints() {
-        if (startGeoCoordinates == null || destinationGeoCoordinates == null) {
-            showDialog("Error", "Please add a route first.");
-            return;
-        }
-
-        Waypoint waypoint1 = new Waypoint(createRandomGeoCoordinatesAroundMapCenter());
-        Waypoint waypoint2 = new Waypoint(createRandomGeoCoordinatesAroundMapCenter());
-        waypoints = new ArrayList<>(Arrays.asList(new Waypoint(startGeoCoordinates),
-                waypoint1, waypoint2, new Waypoint(destinationGeoCoordinates)));
-        calculateRoute(locations);
+    public void removeWaypoints() {
+        hideWaypointsOnMap(mapMarkerList);
     }
 
     private CarOptions getCarOptions() {
         CarOptions carOptions = new CarOptions();
-//        carOptions.routeOptions.enableTolls = true;
-//        // Disabled - Traffic optimization is completely disabled, including long-term road closures. It helps in producing stable routes.
-//        // Time dependent - Traffic optimization is enabled, the shape of the route will be adjusted according to the traffic situation which depends on departure time and arrival time.
-//        carOptions.routeOptions.trafficOptimizationMode = trafficDisabled ?
-//                TrafficOptimizationMode.DISABLED :
-//                TrafficOptimizationMode.TIME_DEPENDENT;
+        carOptions.routeOptions.enableTolls = true;
         return carOptions;
     }
 
@@ -417,57 +396,6 @@ public class RoutingExample {
         mapPolylines.clear();
     }
 
-    // This renders the traffic jam factor on top of the route as multiple MapPolylines per span.
-    private void showTrafficOnRoute(Route route) {
-        if (route.getLengthInMeters() / 1000 > 5000) {
-            Log.d(TAG, "Skip showing traffic-on-route for longer routes.");
-            return;
-        }
-
-        for (Section section : route.getSections()) {
-            for (Span span : section.getSpans()) {
-                DynamicSpeedInfo dynamicSpeed = span.getDynamicSpeedInfo();
-                Color lineColor = getTrafficColor(dynamicSpeed.calculateJamFactor());
-                if (lineColor == null) {
-                    // We skip rendering low traffic.
-                    continue;
-                }
-                float widthInPixels = 10;
-                MapPolyline trafficSpanMapPolyline = null;
-                try {
-                    trafficSpanMapPolyline = new MapPolyline(span.getGeometry(), new MapPolyline.SolidRepresentation(
-                            new MapMeasureDependentRenderSize(RenderSize.Unit.PIXELS, widthInPixels),
-                            lineColor,
-                            LineCap.ROUND));
-                } catch (MapPolyline.Representation.InstantiationException e) {
-                    Log.e("MapPolyline Representation Exception:", e.error.name());
-                } catch (MapMeasureDependentRenderSize.InstantiationException e) {
-                    Log.e("MapMeasureDependentRenderSize Exception:", e.error.name());
-                }
-
-                mapView.getMapScene().addMapPolyline(trafficSpanMapPolyline);
-                mapPolylines.add(trafficSpanMapPolyline);
-            }
-        }
-    }
-
-    // Define a traffic color scheme based on the route's jam factor.
-    // 0 <= jamFactor < 4: No or light traffic.
-    // 4 <= jamFactor < 8: Moderate or slow traffic.
-    // 8 <= jamFactor < 10: Severe traffic.
-    // jamFactor = 10: No traffic, ie. the road is blocked.
-    // Returns null in case of no or light traffic.
-    @Nullable
-    private Color getTrafficColor(Double jamFactor) {
-        if (jamFactor == null || jamFactor < 4) {
-            return null;
-        } else if (jamFactor >= 4 && jamFactor < 8) {
-            return Color.valueOf(1, 1, 0, 0.63f); // Yellow
-        } else if (jamFactor >= 8 && jamFactor < 10) {
-            return Color.valueOf(1, 0, 0, 0.63f); // Red
-        }
-        return Color.valueOf(0, 0, 0, 0.63f); // Black
-    }
 
     private GeoCoordinates createRandomGeoCoordinatesAroundMapCenter() {
         GeoCoordinates centerGeoCoordinates = mapView.viewToGeoCoordinates(
