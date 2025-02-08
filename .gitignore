@@ -1,0 +1,7 @@
+# Ignore all .aar SDK lib files
+*.aar
+
+# Other common patterns
+*.log
+*.tmp
+*.swp
