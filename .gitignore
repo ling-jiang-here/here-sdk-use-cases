@@ -1,3 +1,5 @@
+.gitignore
+
 # Ignore all .aar SDK lib files
 *.aar
 
@@ -5,3 +7,4 @@
 *.log
 *.tmp
 *.swp
+*.DS_Store
