@@ -10,3 +10,6 @@ Note: If your AAR version is different than heresdk-navigate-4.21.2.0.164754.rel
 2) Open Android Studio and sync the project.
 
 Please do not forget: To run the app, you need to add your HERE SDK credentials to the `MainActivity.java` file. More information can be found in the _Get Started_ section of the _Developer Guide_.
+
+Result:
+![result](https://github.com/user-attachments/assets/7e74ac26-ddb3-4f3a-a059-1ab6fcc7a4f1)
