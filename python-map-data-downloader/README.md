@@ -22,5 +22,5 @@ Download 1 tile(s):
 
 ## Data Inspector
 If you doubt about your access to map data, try [HERE Data Inspector](https://platform.here.com/data-inspector/examples)
-<img width="937" alt="here-data-inspector" src="https://github.com/user-attachments/assets/fbdfecd0-07f1-4b4f-a4f1-63d8392df1cb" />
+![data-inspector](https://github.com/user-attachments/assets/af9f8d0b-1b38-40ce-861b-fd0840897eec)
 As you can see, the catalog, layer, and partition IDs used in the sample request are all taken from the above inspector.
