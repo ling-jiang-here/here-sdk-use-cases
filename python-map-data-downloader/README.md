@@ -19,3 +19,8 @@ Get metadata:
 Download 1 tile(s):
 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:03<00:00,  3.40s/it]
 ```
+
+## Data Inspector
+If you doubt about your access to map data, try [HERE Data Inspector](https://platform.here.com/data-inspector/examples)
+<img width="937" alt="here-data-inspector" src="https://github.com/user-attachments/assets/fbdfecd0-07f1-4b4f-a4f1-63d8392df1cb" />
+As you can see, the catalog, layer, and partition IDs used in the sample request are all taken from the above inspector.
