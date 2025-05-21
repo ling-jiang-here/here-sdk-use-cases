@@ -1,0 +1,5174 @@
+{
+  "editorVersion": "1.11.0",
+  "schemeVersion": "1.11.0",
+  "base": {
+    "style": "oslo",
+    "scheme": "normal.night"
+  },
+  "definitions": {
+    "Landmark.Color": "#4F4F4F",
+    "WaterPark.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      14.9,
+      "#0E1E2D00",
+      15,
+      "#0E1E2D"
+    ],
+    "WaterPark.Label.Color": "#5A6D8E",
+    "WaterPark.Label.Outline.Color": "#0000007F",
+    "NationalPark.SecondOutline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      10,
+      "#061F2824",
+      15,
+      "#08253024"
+    ],
+    "WaterPark.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      7,
+      "#000F1C4D",
+      15,
+      "#0017264D"
+    ],
+    "WaterPark.SecondOutline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      10,
+      "#00151C24",
+      15,
+      "#001C2524"
+    ],
+    "NativeReservation.SecondOutline.Color": "#293C2D00",
+    "MilitaryBase.SecondOutline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      10,
+      "#36323724",
+      15,
+      "#2C292F24"
+    ],
+    "EnvironmentalZone.SecondOutline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      "#00546826",
+      15,
+      "#00657E33"
+    ],
+    "CongestionZone.SecondOutline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      "#B300B726",
+      15,
+      "#B300B926"
+    ],
+    "LandParcelBoundary.Color": "#2D3A4664",
+    "CityCenter.Class6.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      "#FFFFFF",
+      12.5,
+      "#FFFFFF",
+      13,
+      "#BFAC8E"
+    ],
+    "CityCenter.Class7.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      "#FFFFFF",
+      12.5,
+      "#FFFFFF",
+      13,
+      "#BFAC8E"
+    ],
+    "POI.TransitStop.Icon.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17,
+      0,
+      18,
+      0,
+      18,
+      30,
+      20,
+      30
+    ],
+    "POI.TransitAccess.Icon.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      18,
+      0,
+      18,
+      0,
+      19,
+      0
+    ],
+    "POI.Accomodation.Label.Color": "#D3D3D3",
+    "POI.Accomodation.Label.Outline.Color": "#000000",
+    "POI.Automotive.Label.Color": "#D3D3D3",
+    "POI.Automotive.Label.Outline.Color": "#000000",
+    "POI.BusinessServicesAreas.Label.Color": "#D3D3D3",
+    "POI.BusinessServicesAreas.Label.Outline.Color": "#000000",
+    "POI.EatDrink.Label.Color": "#D3D3D3",
+    "POI.EatDrink.Label.Outline.Color": "#000000",
+    "POI.Emergency.Label.Color": "#D3D3D3",
+    "POI.Emergency.Label.Outline.Color": "#000000",
+    "POI.Entertainment.Label.Color": "#D3D3D3",
+    "POI.Entertainment.Label.Outline.Color": "#000000",
+    "POI.Facilities.Label.Color": "#D3D3D3",
+    "POI.Facilities.Label.Outline.Color": "#000000",
+    "POI.LeisureOutdoor.Label.Color": "#D3D3D3",
+    "POI.Shopping.Label.Color": "#D3D3D3",
+    "POI.Shopping.Label.Outline.Color": "#000000",
+    "POI.SightsMuseum.Label.Color": "#D3D3D3",
+    "POI.SightsMuseum.Label.Outline.Color": "#000000",
+    "POI.TransitStop.Label.Color": "#D3D3D3",
+    "POI.TransitStop.Label.Outline.Color": "#000000",
+    "Street.Tunnel.Gap.Length": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      18,
+      0,
+      18,
+      4,
+      20,
+      8
+    ],
+    "Street.Tunnel.Dash.Length": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      8,
+      2,
+      11,
+      4,
+      20,
+      8
+    ],
+    "Ferry.Line.Dash.Length": [
+      "step",
+      [
+        "zoom"
+      ],
+      1,
+      8,
+      3,
+      9,
+      4,
+      9.5,
+      5,
+      10,
+      7,
+      10.5,
+      6,
+      11,
+      7.5,
+      11.5,
+      6.5,
+      12,
+      8.5,
+      12.5,
+      6.5,
+      13,
+      8,
+      13.5,
+      7,
+      14,
+      10,
+      14.5,
+      8,
+      15,
+      11,
+      15.5,
+      8,
+      16,
+      11,
+      16.5,
+      9,
+      17,
+      12,
+      17.5,
+      9,
+      18,
+      12,
+      18.5,
+      10,
+      19,
+      12,
+      19.5,
+      10,
+      20,
+      12
+    ],
+    "Street.Category0.Tunnel.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      "#303030",
+      6,
+      "#464646",
+      9,
+      "#616161",
+      13,
+      "#747474",
+      13,
+      "#979797"
+    ],
+    "Street.Category1.Tunnel.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      "#1D1D1D",
+      6,
+      "#292929",
+      9,
+      "#3A3A3A",
+      13,
+      "#484848",
+      13,
+      "#676767"
+    ],
+    "Street.Category2.Tunnel.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      9,
+      "#262626",
+      13,
+      "#2C2C2C",
+      16,
+      "#404040"
+    ],
+    "Street.Category3.Tunnel.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      "#1D1D1D",
+      13,
+      "#2B2B2B",
+      16,
+      "#373737"
+    ],
+    "Street.Category4.Tunnel.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      14,
+      "#1D1D1D",
+      16.5,
+      "#252525"
+    ],
+    "Street.Category0.Tunnel.Outline.Color": "#121212",
+    "Street.Category1.Tunnel.Outline.Color": "#121212",
+    "Street.Category2.Tunnel.Outline.Color": "#121212",
+    "Street.Category3.Tunnel.Outline.Color": "#111111",
+    "Street.Category4.Tunnel.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.5,
+      "#111111",
+      16,
+      "#000000"
+    ],
+    "Street.Category0.TollTunnel.Outline.Color": "#121212",
+    "Street.Category1.TollTunnel.Outline.Color": "#121212",
+    "Street.Category2.TollTunnel.Outline.Color": "#121212",
+    "Street.Category3.TollTunnel.Outline.Color": "#111111",
+    "Street.Category4.TollTunnel.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.5,
+      "#111111",
+      16,
+      "#000000"
+    ],
+    "SkiRun.Arrow.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17,
+      "#848A8B00",
+      18,
+      "#848A8B"
+    ],
+    "Street.Walkway.Bridge.Baseline.Color": "#262626",
+    "Street.Walkway.Bridge.Baseline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      0,
+      13,
+      0,
+      14,
+      0,
+      15,
+      0,
+      15.5,
+      0,
+      16,
+      0,
+      16.5,
+      0,
+      17,
+      0,
+      18,
+      0,
+      18,
+      1,
+      20,
+      2
+    ],
+    "Street.Pedestrian.Bridge.Baseline.Color": "#262626",
+    "Street.Pedestrian.Bridge.Baseline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      0,
+      13,
+      0,
+      14,
+      0,
+      15,
+      0,
+      15.5,
+      0,
+      16,
+      0,
+      16.5,
+      0,
+      17,
+      0,
+      18,
+      0,
+      18,
+      1,
+      20,
+      2
+    ],
+    "Street.Category4.ParkingLot.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16,
+      0,
+      16,
+      2,
+      17,
+      4,
+      18,
+      4,
+      19,
+      6,
+      20,
+      10,
+      24,
+      10
+    ],
+    "Street.Category4.RestrictedAccess.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16,
+      "#211F1F",
+      17.5,
+      "#232323",
+      17.6,
+      "#2C2C2C"
+    ],
+    "Street.Category4.RestrictedAccess.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      "#11111100",
+      16,
+      "#111111",
+      17.5,
+      "#000000"
+    ],
+    "Street.Category4.RestrictedAccess.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16,
+      0,
+      16,
+      2,
+      17,
+      4,
+      18,
+      4,
+      19,
+      6,
+      20,
+      10,
+      24,
+      10
+    ],
+    "Street.Category4.Arrow.RestrictedAccess.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      18,
+      "#1C293300",
+      18.25,
+      "#1C2933",
+      18.5,
+      "#1F2D39"
+    ],
+    "Street.Category4.RestrictedAccessUnpaved.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      "#11111100",
+      16,
+      "#111111",
+      17.5,
+      "#000000"
+    ],
+    "Rail.SecondLine.Color": "#111214",
+    "Rail.Line.Gap.Length": [
+      "step",
+      [
+        "zoom"
+      ],
+      4,
+      15,
+      5,
+      16,
+      6,
+      17,
+      9,
+      18,
+      10,
+      19,
+      12,
+      20,
+      14
+    ],
+    "Rail.Line.Dash.Length": [
+      "step",
+      [
+        "zoom"
+      ],
+      4,
+      13,
+      6,
+      15,
+      8,
+      16,
+      10,
+      17,
+      15,
+      18,
+      20,
+      19,
+      25,
+      20,
+      30
+    ],
+    "Chairlift.Outline.Color": "#414E5800",
+    "Lake.Class1.Label.Outline.Width": 2,
+    "Water.4000m.Color": "#0E1E2D",
+    "Water.5000m.Color": "#0E1E2D",
+    "Water.6000m.Color": "#0E1E2D",
+    "Water.Outline.Color": "#FFFFFF00",
+    "Water.SecondOutline.Color": "#072B4C70",
+    "Water.Outline.Width": 0,
+    "Water.SecondOutline.Width": 0,
+    "RoadShield.Label.SizeFactor": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      8,
+      0,
+      8,
+      1.5,
+      12,
+      1.5,
+      20,
+      2
+    ],
+    "ExitInfo.Number.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      16,
+      16.5,
+      20,
+      17.4,
+      22,
+      20,
+      25
+    ],
+    "ExitInfo.Number.Label.SizeFactor": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      1,
+      20,
+      2,
+      24,
+      3
+    ],
+    "ExitInfo.Number.Label.Color": "#F9F9F9",
+    "ExitInfo.Number.Label.AMER.Color": "#F9F9F9",
+    "ExitInfo.Number.Label.Outline.Color": "#F9F9F9",
+    "ExitInfo.Number.Label.AMER.Outline.Color": "#F5F5F5",
+    "ExitInfo.Number.Icon.Height": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      25,
+      16.5,
+      25,
+      18,
+      30,
+      20,
+      35
+    ],
+    "ExitInfo.Number.Icon.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      35,
+      16.5,
+      40,
+      18,
+      45,
+      20,
+      55
+    ],
+    "ExitInfo.Name.Label.Color": "#F9F9F9",
+    "ExitInfo.Name.Label.AMER.Color": "#F9F9F9",
+    "ExitInfo.Name.Label.Outline.Color": "#4F617D00",
+    "Truck.Outline.Color": "#E2A6AE00",
+    "Truck.SecondLine.Color": "#FFFF4000",
+    "Terrain.Shading.Highlight.Color": "#25313E1C",
+    "ContourLine.Counting.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      "#83838305",
+      12,
+      "#83838326",
+      13,
+      "#83838327",
+      15,
+      "#83838328",
+      16,
+      "#83838321"
+    ],
+    "ContourLine.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      "#83838315",
+      12,
+      "#83838316",
+      13,
+      "#83838317",
+      15,
+      "#83838314"
+    ],
+    "ContourLine.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      "#81818174",
+      17,
+      "#83838373"
+    ],
+    "ContourLine.Label.Outline.Color": "#030E0AB8",
+    "Building.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      0,
+      16,
+      0,
+      17,
+      0,
+      20,
+      0.5,
+      24,
+      0.75
+    ],
+    "Beach.Color": "#252525",
+    "Beach.Label.Color": "#716853",
+    "Beach.Label.Outline.Color": "#0000007F",
+    "Building.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.6,
+      "#22222200",
+      17.6,
+      "#22222292"
+    ],
+    "Building.Outline.Color": "#000000",
+    "Building.Label.Color": "#7E7E7E",
+    "Building.Label.Outline.Color": "#0000007F",
+    "Building.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      18,
+      0,
+      18,
+      0,
+      20,
+      0,
+      24,
+      0
+    ],
+    "BuildingAddress.Label.Color": "#B5B5B5",
+    "BuildingAddress.Label.Outline.Color": "#0000007F",
+    "BuildingAddress.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      18,
+      0,
+      19.2,
+      0,
+      19.2,
+      20,
+      24,
+      24
+    ],
+    "BuildingAddress.Label.Outline.Width": 2,
+    "BuiltupArea.Color": "#161616",
+    "Neighborhood.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      "#898989",
+      13,
+      "#898989"
+    ],
+    "Neighborhood.Label.Outline.Color": "#0000007F",
+    "Neighborhood.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      14,
+      0,
+      15,
+      0,
+      16,
+      0,
+      17,
+      0
+    ],
+    "Neighborhood.Label.Outline.Width": 2,
+    "CityCenter.Class1.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      "#FFFFFF",
+      13,
+      "#FFFFFF",
+      13,
+      "#BFAC8E"
+    ],
+    "CityCenter.Class1.Label.Outline.Color": "#000000",
+    "CityCenter.Class1.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      4,
+      0,
+      4,
+      15,
+      7,
+      18,
+      9,
+      22,
+      10,
+      22,
+      11,
+      22,
+      12,
+      22,
+      13,
+      22,
+      14,
+      22,
+      16,
+      22,
+      16,
+      0,
+      20,
+      0
+    ],
+    "CityCenter.Class1.Label.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      1,
+      6,
+      2,
+      7,
+      2,
+      8,
+      3,
+      11,
+      3,
+      12,
+      3,
+      13,
+      3,
+      14,
+      3,
+      15,
+      3,
+      20,
+      3
+    ],
+    "CityCenter.Class2.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      "#FFFFFF",
+      13,
+      "#FFFFFF",
+      13,
+      "#BFAC8E"
+    ],
+    "CityCenter.Class2.Label.Outline.Color": "#000000",
+    "CityCenter.Class2.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      6,
+      0,
+      6,
+      16,
+      7,
+      17,
+      9,
+      18,
+      10,
+      18,
+      11,
+      22,
+      12,
+      22,
+      13,
+      22,
+      14,
+      22,
+      16,
+      22,
+      16,
+      0,
+      20,
+      0
+    ],
+    "CityCenter.Class2.Label.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      1,
+      6,
+      2,
+      7,
+      2,
+      8,
+      3,
+      11,
+      3,
+      12,
+      3,
+      13,
+      3,
+      14,
+      3,
+      15,
+      3,
+      20,
+      3
+    ],
+    "CityCenter.Class3.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      "#FFFFFF",
+      13,
+      "#FFFFFF",
+      13,
+      "#BFAC8E"
+    ],
+    "CityCenter.Class3.Label.Outline.Color": "#000000",
+    "CityCenter.Class3.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      6,
+      0,
+      6,
+      15,
+      9,
+      18,
+      10,
+      18,
+      11,
+      22,
+      12,
+      22,
+      13,
+      22,
+      14,
+      22,
+      16,
+      22,
+      16,
+      0,
+      20,
+      0
+    ],
+    "CityCenter.Class3.Label.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      1,
+      6,
+      2,
+      7,
+      2,
+      8,
+      3,
+      11,
+      3,
+      12,
+      3,
+      13,
+      3,
+      14,
+      3,
+      15,
+      3,
+      20,
+      3
+    ],
+    "CityCenter.Class4.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      "#FFFFFF",
+      12.5,
+      "#FFFFFF",
+      13,
+      "#BFAC8E"
+    ],
+    "CityCenter.Class4.Label.Outline.Color": "#000000",
+    "CityCenter.Class4.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      0,
+      5,
+      0,
+      6,
+      0,
+      7,
+      0,
+      8,
+      0,
+      10,
+      0,
+      10,
+      18,
+      11,
+      18,
+      12,
+      20,
+      13,
+      22,
+      14,
+      22,
+      16,
+      22,
+      16,
+      0,
+      20,
+      0
+    ],
+    "CityCenter.Class4.Label.Outline.Width": 3,
+    "CityCenter.Class5.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      "#FFFFFF",
+      13,
+      "#BFAC8E"
+    ],
+    "CityCenter.Class5.Label.Outline.Color": "#000000",
+    "CityCenter.Class5.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      0,
+      5,
+      0,
+      6,
+      0,
+      7,
+      0,
+      10.9,
+      0,
+      11.9,
+      0,
+      12,
+      0,
+      12,
+      20,
+      14,
+      22,
+      16,
+      22,
+      16,
+      0,
+      20,
+      0
+    ],
+    "CityCenter.Class5.Label.Outline.Width": 3,
+    "CityCenter.Class6.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      0,
+      5,
+      0,
+      6,
+      0,
+      7,
+      0,
+      10.9,
+      0,
+      11.9,
+      0,
+      12,
+      0,
+      12,
+      20,
+      14,
+      22,
+      16,
+      22,
+      16,
+      0,
+      20,
+      0
+    ],
+    "CityCenter.Class7.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      0,
+      5,
+      0,
+      6,
+      0,
+      7,
+      0,
+      10.9,
+      0,
+      11.9,
+      0,
+      12,
+      0,
+      12,
+      20,
+      14,
+      22,
+      16,
+      22,
+      16,
+      0,
+      20,
+      0
+    ],
+    "CityCenter.Hamlet.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      14,
+      0,
+      14,
+      18.5,
+      16,
+      20,
+      16,
+      0,
+      20,
+      0
+    ],
+    "CityCenter.Hamlet.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      "#898989",
+      13,
+      "#898989"
+    ],
+    "CityCenter.Hamlet.Label.Outline.Color": "#000000F4",
+    "CityCenter.Hamlet.Label.Outline.Width": 3,
+    "Continent.Label.Color": "#FDD9B1",
+    "Continent.Label.Outline.Color": "#000000CC",
+    "Continent.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      12,
+      2,
+      16,
+      2,
+      0
+    ],
+    "CountryBoundary.Color": "#4C4C4D",
+    "CountryBoundary.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      4,
+      1.5
+    ],
+    "CountryBoundary.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      "#6E233200",
+      4,
+      "#6F70741A",
+      6,
+      "#23266E2E"
+    ],
+    "StateBoundary.Color": "#3D3D3F",
+    "StateBoundary.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      "#6E233200",
+      4,
+      "#6F70741A",
+      6,
+      "#23266E2E"
+    ],
+    "CountryBoundary.Disputed.Color": "#4C4C4D",
+    "CountryBoundary.Disputed.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      "#6E233200",
+      4,
+      "#6F70741A",
+      6,
+      "#23266E2E"
+    ],
+    "CountryBoundary.Disputed.Width": 1.5,
+    "StateBoundary.Disputed.Color": "#3D3D3F",
+    "StateBoundary.Disputed.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      "#6E233200",
+      4,
+      "#6F70741A",
+      6,
+      "#23266E2E"
+    ],
+    "StateBoundary.Disputed.Width": 1,
+    "Country.Label.Color": "#637D9D",
+    "Country.Label.Outline.Color": "#000000",
+    "Country.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      2,
+      0,
+      2,
+      13,
+      7,
+      13,
+      7,
+      0
+    ],
+    "Country.Label.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      2,
+      4,
+      2,
+      5,
+      2,
+      6,
+      2,
+      9,
+      2,
+      9,
+      0
+    ],
+    "State.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      "#FDD9B1",
+      7,
+      "#987E61"
+    ],
+    "State.Label.Outline.Color": "#000000F3",
+    "State.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      4,
+      0,
+      4,
+      15,
+      5,
+      16,
+      6,
+      17,
+      7,
+      18,
+      8,
+      18,
+      9,
+      18
+    ],
+    "State.Label.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      1,
+      3,
+      1,
+      4,
+      1,
+      5,
+      2,
+      6,
+      3,
+      9,
+      3,
+      9,
+      0
+    ],
+    "Ferry.Line.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12.9,
+      0,
+      15.9,
+      1,
+      16,
+      2
+    ],
+    "Ferry.Line.Color": "#2B394A",
+    "Ferry.Label.Color": "#696969",
+    "Ferry.Label.Size": 0,
+    "Ferry.Label.Outline.Width": 1,
+    "Desert.Color": "#101010",
+    "Desert.Label.Color": "#BEBCB7",
+    "Desert.Label.Outline.Color": "#0000007F",
+    "Desert.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      0,
+      11,
+      15,
+      12,
+      18,
+      15,
+      18,
+      16,
+      18,
+      20,
+      22
+    ],
+    "Glacier.Color": "#121212",
+    "Glacier.Label.Color": "#7E7E7E",
+    "Glacier.Label.Outline.Color": "#0000007F",
+    "Glacier.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      11,
+      0,
+      11,
+      15,
+      12,
+      18,
+      15,
+      18,
+      16,
+      18,
+      20,
+      22
+    ],
+    "IndustrialComplex.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#2B2B2B00",
+      13,
+      "#2B2B2B8E"
+    ],
+    "IndustrialComplex.Label.Color": "#C1C1C1",
+    "IndustrialComplex.Label.Outline.Color": "#00000089",
+    "Airport.Color": "#28292B",
+    "Cemetery.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      14.9,
+      "#29302A00",
+      15,
+      "#29302A"
+    ],
+    "Allotment.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      14.9,
+      "#29302A00",
+      15,
+      "#29302A"
+    ],
+    "HarborArea.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#46464600",
+      13,
+      "#4646468E"
+    ],
+    "HospitalCampus.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#463A3A00",
+      13,
+      "#292323"
+    ],
+    "PedestrianArea.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      "#16161600",
+      15,
+      "#161616"
+    ],
+    "Railyard.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#46464600",
+      13,
+      "#4646468F"
+    ],
+    "ShoppingComplex.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      "#3E312900",
+      15,
+      "#3E3129B3"
+    ],
+    "SportsComplex.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      14.9,
+      "#312A3400",
+      15,
+      "#312A34"
+    ],
+    "UniversityCampus.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      "#252B3800",
+      15,
+      "#252B3899"
+    ],
+    "Park.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      14.9,
+      "#29302A00",
+      15,
+      "#151816",
+      16,
+      "#29302A"
+    ],
+    "Park.Label.Color": "#3A7155",
+    "Park.Label.Outline.Color": "#0000007F",
+    "Park.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      0,
+      17.6,
+      0,
+      17.6,
+      18,
+      19.5,
+      22
+    ],
+    "Park.Label.Outline.Width": 2,
+    "AmusementPark.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12.9,
+      "#28292B00",
+      13,
+      "#312A34"
+    ],
+    "AnimalPark.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      14.9,
+      "#29302A00",
+      15,
+      "#29302A"
+    ],
+    "GolfCourse.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      14.9,
+      "#29302A00",
+      15,
+      "#151816",
+      16,
+      "#29302A"
+    ],
+    "Island.Label.Color": "#7E7E7E",
+    "Island.Label.Outline.Color": "#0000007F",
+    "Island.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      6,
+      0,
+      6,
+      0,
+      11,
+      0,
+      12,
+      0,
+      13,
+      0,
+      14,
+      0,
+      15,
+      0,
+      16,
+      0,
+      17,
+      0,
+      20,
+      0
+    ],
+    "POI.MountainPeak.Icon.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      11,
+      0,
+      11,
+      18,
+      12,
+      18,
+      13,
+      25,
+      20,
+      25,
+      24,
+      25
+    ],
+    "POI.MountainPeak.Label.Color": "#D3D3D3",
+    "POI.MountainPeak.Label.Outline.Color": "#000000",
+    "POI.MountainPeak.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      12,
+      9,
+      18,
+      13,
+      24,
+      16,
+      30,
+      19.5,
+      36
+    ],
+    "MountainRange.Label.Color": "#6F6668",
+    "MountainRange.Label.Outline.Color": "#101010",
+    "MountainRange.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      12,
+      10,
+      14,
+      12,
+      15,
+      13,
+      16,
+      13,
+      0,
+      24,
+      0
+    ],
+    "MilitaryBase.Color": "#0A0A0A",
+    "MilitaryBase.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      7,
+      "#26263D4D",
+      15,
+      "#2B2B444D"
+    ],
+    "MilitaryBase.Label.Color": "#B3B3B3",
+    "MilitaryBase.Label.Outline.Color": "#0000007F",
+    "NationalPark.Color": "#FF40FD00",
+    "NationalPark.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      7,
+      0,
+      8,
+      1,
+      15,
+      2,
+      17,
+      2
+    ],
+    "NationalPark.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      7,
+      "#000A0F4D",
+      15,
+      "#0010164D"
+    ],
+    "NationalPark.Label.Color": "#3D584A",
+    "NationalPark.Label.Outline.Color": "#0000007F",
+    "NationalPark.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      9.9,
+      0,
+      11.4,
+      0,
+      11.4,
+      15,
+      13,
+      18,
+      15,
+      20,
+      16,
+      28
+    ],
+    "NativeReservation.Color": "#151A15",
+    "NativeReservation.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      8,
+      "#1F2C23",
+      8.1,
+      "#233428"
+    ],
+    "NativeReservation.Label.Color": "#F9F9F9",
+    "NativeReservation.Label.Outline.Color": "#0000007F",
+    "NativeReservation.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      6,
+      0,
+      11,
+      0,
+      11,
+      15,
+      13,
+      15,
+      15,
+      15,
+      16,
+      15,
+      20,
+      15
+    ],
+    "POI.Icon.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16,
+      0,
+      17.5,
+      0,
+      17.5,
+      40
+    ],
+    "POI.Generic.Label.Color": "#D3D3D3",
+    "POI.Generic.Label.Outline.Color": "#000208",
+    "POI.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      0,
+      17.5,
+      22,
+      19.5,
+      28
+    ],
+    "POI.Label.Outline.Width": 3,
+    "Rail.Line.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12.9,
+      0,
+      13,
+      1,
+      14,
+      1.5,
+      16,
+      1.5,
+      18,
+      4
+    ],
+    "Rail.Line.Color": "#2C2C2B",
+    "Runway.Color": "#121212",
+    "Sea.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      40
+    ],
+    "Lake.Label.Color": "#68788F",
+    "Lake.Label.Outline.Color": "#000000D0",
+    "Lake.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      7,
+      0,
+      7,
+      0,
+      11,
+      0,
+      12,
+      11,
+      15,
+      11,
+      16,
+      12,
+      20,
+      12,
+      24,
+      14.4
+    ],
+    "River.Label.Color": "#68788F",
+    "River.Label.Outline.Color": "#0000007F",
+    "River.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      6,
+      1,
+      13,
+      1,
+      14,
+      3,
+      15,
+      4.5,
+      16,
+      7.5,
+      17,
+      13.5,
+      18,
+      21,
+      19,
+      33,
+      20,
+      60
+    ],
+    "River.Class1.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      6,
+      0,
+      6,
+      1,
+      9,
+      1,
+      10,
+      2,
+      11,
+      2.5,
+      12,
+      3,
+      13,
+      4,
+      14,
+      5,
+      15,
+      8,
+      16,
+      14,
+      17,
+      24,
+      18,
+      50,
+      19,
+      80,
+      20,
+      120
+    ],
+    "River.Class2.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      6,
+      0,
+      7,
+      0,
+      10,
+      0,
+      10,
+      1,
+      11,
+      2,
+      13,
+      2,
+      14,
+      3,
+      15,
+      5,
+      16,
+      9,
+      17,
+      16,
+      18,
+      29,
+      19,
+      50,
+      20,
+      90
+    ],
+    "River.Class3.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      7,
+      0,
+      7,
+      1,
+      9,
+      1,
+      10,
+      1,
+      11,
+      2,
+      13,
+      2,
+      14,
+      3,
+      15,
+      5,
+      16,
+      9,
+      17,
+      16,
+      18,
+      29,
+      19,
+      50,
+      20,
+      90
+    ],
+    "River.Class4.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      7,
+      0,
+      7,
+      1,
+      9,
+      1,
+      10,
+      1,
+      11,
+      2,
+      12,
+      2,
+      13,
+      3,
+      14,
+      5,
+      15,
+      7,
+      16,
+      10,
+      17,
+      16,
+      18,
+      29,
+      19,
+      50,
+      20,
+      90
+    ],
+    "River.Class5.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      7,
+      0,
+      8,
+      0,
+      10,
+      0,
+      10,
+      1,
+      11,
+      1,
+      12,
+      2,
+      13,
+      2,
+      14,
+      3,
+      15,
+      4,
+      16,
+      7,
+      17,
+      13,
+      18,
+      24,
+      19,
+      41,
+      20,
+      75
+    ],
+    "River.Class6.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      8,
+      0,
+      9,
+      0,
+      10,
+      0,
+      10,
+      1,
+      13,
+      1,
+      14,
+      2,
+      15,
+      3,
+      16,
+      6,
+      17,
+      11,
+      18,
+      20,
+      19,
+      36,
+      20,
+      64
+    ],
+    "River.Class7.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      10,
+      0,
+      10,
+      1,
+      13,
+      1,
+      14,
+      1,
+      15,
+      2,
+      16,
+      4,
+      17,
+      8,
+      18,
+      12,
+      19,
+      18,
+      20,
+      25
+    ],
+    "River.Class8.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      11,
+      0,
+      11,
+      1,
+      13,
+      1,
+      14,
+      1,
+      15,
+      2,
+      16,
+      3,
+      17,
+      5,
+      18,
+      8,
+      19,
+      14,
+      20,
+      25
+    ],
+    "CanalWaterChannel.Label.Color": "#68788F",
+    "CanalWaterChannel.Label.Outline.Color": "#0000007F",
+    "IntermittentRiver.Label.Color": "#68788F",
+    "IntermittentRiver.Label.Outline.Color": "#000000D0",
+    "Street.Category0.Ramp.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      4,
+      0,
+      5,
+      0,
+      6,
+      1,
+      7,
+      2,
+      9,
+      2,
+      10,
+      2,
+      11,
+      2,
+      12,
+      4,
+      13,
+      4,
+      14,
+      6,
+      15,
+      8,
+      16.5,
+      16,
+      17.5,
+      22,
+      18,
+      30,
+      19,
+      44,
+      20.5,
+      80
+    ],
+    "Street.Category0.Bridge.Color": "#0D0D0D59",
+    "Street.Category0.Bridge.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      1.5,
+      16,
+      1.5,
+      17,
+      2,
+      20,
+      2
+    ],
+    "Street.Category0.Arrow.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16.5,
+      "#38383800"
+    ],
+    "Street.Category0.Arrow.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16.5,
+      "#38383800"
+    ],
+    "Street.Category0.Label.Color": "#FFFFFF",
+    "Street.Category0.Label.Outline.Color": "#0000009B",
+    "Street.Category0.Label.Size": 0,
+    "Street.Category0.Label.Outline.Width": 0,
+    "Street.Category0.Label.Toll.Outline.Color": "#0000009B",
+    "Street.Category1.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#D7D7D7",
+      17.5,
+      "#E9E9E9",
+      17.5,
+      "#E1E1E1"
+    ],
+    "Street.Category1.Label.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Category1.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      0,
+      12,
+      0,
+      13,
+      0,
+      13,
+      22,
+      15,
+      22,
+      16,
+      26,
+      17,
+      30,
+      18,
+      32,
+      20,
+      33
+    ],
+    "Street.Category1.Label.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      14,
+      0,
+      14,
+      2.5,
+      16,
+      3,
+      17.5,
+      3.5
+    ],
+    "Street.Category1.Label.Ramp.Size": 0,
+    "Street.Category2.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#D7D7D7",
+      17.5,
+      "#E9E9E9",
+      17.5,
+      "#E1E1E1"
+    ],
+    "Street.Category2.Label.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Category2.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      0,
+      12,
+      0,
+      13,
+      0,
+      13,
+      22,
+      15,
+      22,
+      16,
+      26,
+      17,
+      30,
+      18,
+      32,
+      20,
+      33
+    ],
+    "Street.Category2.Label.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      13,
+      0,
+      13,
+      2.5,
+      16,
+      3,
+      17.5,
+      3.5
+    ],
+    "Street.Category2.Label.Ramp.Size": 0,
+    "Street.Category3.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#FDFDFD",
+      17.5,
+      "#FBF9F9",
+      17.5,
+      "#FDFCFC"
+    ],
+    "Street.Category3.Label.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Category3.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      0,
+      12,
+      0,
+      13,
+      0,
+      14.9,
+      0,
+      16,
+      0,
+      16,
+      22,
+      17.5,
+      24,
+      18,
+      28,
+      19.5,
+      28,
+      20,
+      34
+    ],
+    "Street.Category3.Label.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      13,
+      0,
+      13,
+      2.5,
+      16,
+      3,
+      17.5,
+      3.5
+    ],
+    "Street.Category3.Label.Ramp.Size": 0,
+    "Street.Category4.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#D7D7D7",
+      17.5,
+      "#E9E9E9",
+      17.5,
+      "#E1E1E1"
+    ],
+    "Street.Category4.Label.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Category4.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16,
+      0,
+      17,
+      0,
+      17,
+      20,
+      18,
+      23,
+      20,
+      32
+    ],
+    "Street.Category4.Label.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      13,
+      0,
+      13,
+      2.5,
+      16,
+      2,
+      17.5,
+      3.5
+    ],
+    "Street.Pedestrian.Label.Color": "#70747A",
+    "Street.Pedestrian.Label.Outline.Color": "#0000007F",
+    "Street.Pedestrian.Label.Size": 0,
+    "Street.Pedestrian.Label.Outline.Width": 0,
+    "Street.Walkway.Label.Color": "#70747A",
+    "Street.Walkway.Label.Outline.Color": "#0000007F",
+    "Street.Walkway.Label.Size": 0,
+    "Street.Walkway.Label.Outline.Width": 0,
+    "Street.Category2.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      8,
+      0,
+      10,
+      1,
+      11,
+      1,
+      12,
+      2,
+      13,
+      2,
+      14,
+      4,
+      15,
+      4,
+      16,
+      11,
+      17,
+      15,
+      18,
+      22,
+      19.5,
+      27,
+      20,
+      40
+    ],
+    "Street.Category3.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      0,
+      12,
+      1,
+      13,
+      1,
+      14,
+      2,
+      15,
+      3,
+      16,
+      8,
+      17,
+      12,
+      18,
+      20,
+      19.5,
+      25,
+      20,
+      40
+    ],
+    "Street.Category4.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12.5,
+      0,
+      12.5,
+      1,
+      14,
+      1.5,
+      15,
+      2,
+      16,
+      6,
+      17,
+      8,
+      18,
+      20,
+      19.5,
+      22,
+      20,
+      35
+    ],
+    "Street.Pedestrian.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      0,
+      13,
+      0,
+      14,
+      0,
+      15,
+      0,
+      15.5,
+      0,
+      16,
+      0,
+      16.5,
+      0,
+      17,
+      0,
+      18,
+      0,
+      18,
+      1,
+      20,
+      2
+    ],
+    "Street.Pedestrian.Dash.Length": [
+      "step",
+      [
+        "zoom"
+      ],
+      0,
+      17,
+      0,
+      18,
+      4,
+      19,
+      6,
+      20,
+      7
+    ],
+    "Street.Pedestrian.Gap.Length": [
+      "step",
+      [
+        "zoom"
+      ],
+      2,
+      17,
+      3,
+      19,
+      5,
+      20,
+      6
+    ],
+    "Street.Walkway.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      0,
+      13,
+      0,
+      14,
+      0,
+      15,
+      0,
+      15.5,
+      0,
+      16,
+      0,
+      16.5,
+      0,
+      17,
+      0,
+      18,
+      0,
+      18,
+      1,
+      20,
+      2
+    ],
+    "Street.Category0.Centerline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      11,
+      0,
+      11,
+      1,
+      20,
+      1
+    ],
+    "Street.Category0.Outline.Color": "#121212",
+    "Street.Category0.Centerline.Color": "#777777",
+    "Street.Category0.Tunnel.Centerline.Color": "#3E3E3E",
+    "Street.Category1.Outline.Color": "#121212",
+    "Street.Category2.Outline.Color": "#121212",
+    "Street.Category3.Outline.Color": "#111111",
+    "Street.Category4.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.5,
+      "#111111",
+      16,
+      "#000000"
+    ],
+    "Street.Pedestrian.Outline.Color": "#00000000",
+    "Street.Walkway.Outline.Color": "#00000000",
+    "POI.TransitStop.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      6.3,
+      0,
+      6.3,
+      0,
+      19,
+      0,
+      20,
+      0
+    ],
+    "CongestionZone.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      "#963296",
+      15,
+      "#962998CC"
+    ],
+    "EnvironmentalZone.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      "#099CAD33",
+      9,
+      "#099CAD26",
+      10,
+      "#099CAD26",
+      11,
+      "#099CAD21",
+      12,
+      "#099CAD1A",
+      13,
+      "#099CAD0D",
+      20,
+      "#099CAD03"
+    ],
+    "EnvironmentalZone.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      "#016771",
+      15,
+      "#007785CC"
+    ],
+    "CongestionZone.Label.Color": "#9F6DA1",
+    "CongestionZone.Label.Outline.Color": "#210022",
+    "EnvironmentalZone.Label.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      "#699EAA",
+      15,
+      "#7BADB3"
+    ],
+    "EnvironmentalZone.Label.Outline.Color": "#001518",
+    "Truck.Label.Color": "#2F2F2F",
+    "Truck.Color": "#4000CB",
+    "Water.0m.Color": "#0E1E2D",
+    "Woodland.Label.Color": "#7E7E7E00",
+    "Woodland.Label.Outline.Color": "#0000007F",
+    "Woodland.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      15,
+      11,
+      15,
+      12,
+      18,
+      15,
+      18,
+      16,
+      18,
+      20,
+      22
+    ],
+    "Land.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      "#121212",
+      14,
+      "#161616"
+    ],
+    "Woodland.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      "#0E0E0E",
+      13,
+      "#161616"
+    ],
+    "Airport.Label.Color": "#9AD0FD",
+    "Airport.Label.Outline.Color": "#010209",
+    "Airport.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      0,
+      12,
+      16,
+      15,
+      25,
+      16,
+      36,
+      20,
+      36
+    ],
+    "Cemetery.Label.Color": "#2C3F36",
+    "Cemetery.Label.Outline.Color": "#0000007F",
+    "Cemetery.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17,
+      0,
+      18,
+      15,
+      20,
+      15
+    ],
+    "Allotment.Label.Color": "#2C3F36",
+    "Allotment.Label.Outline.Color": "#0000007F",
+    "Allotment.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      0,
+      15.9,
+      0,
+      16,
+      18,
+      20,
+      18
+    ],
+    "HarborArea.Label.Color": "#C1C1C1",
+    "HarborArea.Label.Outline.Color": "#00000089",
+    "HarborArea.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      14,
+      0,
+      14,
+      15,
+      15,
+      18,
+      16,
+      18,
+      20,
+      18
+    ],
+    "HospitalCampus.Label.Color": "#FF8282",
+    "HospitalCampus.Label.Outline.Color": "#0000007F",
+    "HospitalCampus.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      11,
+      0,
+      12,
+      15,
+      14,
+      15,
+      15,
+      20
+    ],
+    "PedestrianArea.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      14,
+      0,
+      14,
+      15,
+      15,
+      18,
+      16,
+      18,
+      20,
+      18
+    ],
+    "PedestrianArea.Label.Color": "#C1C1C1",
+    "PedestrianArea.Label.Outline.Color": "#00000089",
+    "Railyard.Label.Color": "#F9F9F900",
+    "Railyard.Label.Outline.Color": "#00000089",
+    "Railyard.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0
+    ],
+    "ShoppingComplex.Label.Color": "#FFB269",
+    "ShoppingComplex.Label.Outline.Color": "#00000089",
+    "ShoppingComplex.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      14.9,
+      0,
+      15,
+      17,
+      16,
+      18,
+      20,
+      18
+    ],
+    "SportsComplex.Label.Color": "#C088D3",
+    "SportsComplex.Label.Outline.Color": "#0000007F",
+    "SportsComplex.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      14.9,
+      0,
+      15,
+      15,
+      15,
+      18,
+      16,
+      18,
+      20,
+      18
+    ],
+    "UniversityCampus.Label.Color": "#779CBE",
+    "UniversityCampus.Label.Outline.Color": "#0000007F",
+    "UniversityCampus.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      14.9,
+      0,
+      15,
+      15,
+      16,
+      18,
+      20,
+      18
+    ],
+    "AmusementPark.Label.Color": "#C088D3",
+    "AmusementPark.Label.Outline.Color": "#0000007F",
+    "AmusementPark.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      12,
+      0,
+      12,
+      15,
+      13,
+      15,
+      15,
+      18,
+      16,
+      18,
+      20,
+      18
+    ],
+    "AnimalPark.Label.Color": "#2C3F36",
+    "AnimalPark.Label.Outline.Color": "#0000007F",
+    "AnimalPark.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      0,
+      17.6,
+      0,
+      17.6,
+      18,
+      19.5,
+      22
+    ],
+    "GolfCourse.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      0,
+      15.9,
+      0,
+      16,
+      18,
+      20,
+      18
+    ],
+    "GolfCourse.Label.Color": "#3A7155",
+    "GolfCourse.Label.Outline.Color": "#0000007F",
+    "BayHarbor.Class1.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "BayHarbor.Class2.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "BayHarbor.Class3.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "BayHarbor.Class4.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "BayHarbor.Class5.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "BayHarbor.Class6.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "BayHarbor.Class7.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "BayHarbor.Class8.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "Lake.Class1.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      7,
+      0,
+      7,
+      15,
+      11,
+      15,
+      12,
+      18,
+      15,
+      18,
+      16,
+      18,
+      20,
+      18,
+      24,
+      18
+    ],
+    "Lake.Class2.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "Lake.Class3.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "Lake.Class4.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "Lake.Class5.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "Lake.Class6.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "Lake.Class7.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "Lake.Class8.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.9,
+      0,
+      16,
+      18,
+      18,
+      18,
+      20,
+      32
+    ],
+    "Street.Category1.Unpaved.Outline.Color": "#121212",
+    "Street.Category1.Bridge.Color": "#0D0D0D59",
+    "Street.Category1.Bridge.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      1.5,
+      16,
+      1.5,
+      17,
+      2,
+      20,
+      2
+    ],
+    "Street.Category1.Arrow.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16,
+      "#343C4500",
+      16.5,
+      "#343C45"
+    ],
+    "Street.Category1.Toll.Outline.Color": "#121212",
+    "Street.Category1.Ramp.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      3,
+      13,
+      3,
+      14,
+      4,
+      15,
+      5,
+      16,
+      6,
+      17,
+      8,
+      18,
+      18,
+      19,
+      23,
+      20,
+      35
+    ],
+    "Street.Category1.Arrow.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16,
+      "#373E4300",
+      16.5,
+      "#3C332A99"
+    ],
+    "Street.Category1.Arrow.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16,
+      "#373E4300",
+      16.5,
+      "#3C332A99"
+    ],
+    "Street.Category2.Ramp.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      13,
+      0,
+      13,
+      1,
+      20,
+      1
+    ],
+    "Street.Category2.Unpaved.Outline.Color": "#121212",
+    "Street.Category2.Bridge.Color": "#0D0D0D59",
+    "Street.Category2.Arrow.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16.5,
+      "#242C3300",
+      17,
+      "#242C33"
+    ],
+    "Street.Category2.Toll.Outline.Color": "#121212",
+    "Street.Category2.Ramp.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      3,
+      14,
+      3,
+      15,
+      4,
+      16,
+      5,
+      17,
+      6,
+      18,
+      12,
+      19,
+      20,
+      20,
+      32
+    ],
+    "Street.Category2.Bridge.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      13,
+      0,
+      13,
+      1,
+      20,
+      1
+    ],
+    "Street.Category2.Arrow.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16.5,
+      "#1E232500",
+      17,
+      "#3C332A"
+    ],
+    "Street.Category2.Arrow.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16.5,
+      "#1E232500",
+      17,
+      "#3C332A"
+    ],
+    "Street.Category3.Ramp.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      13,
+      0,
+      13,
+      1,
+      20,
+      1
+    ],
+    "Street.Category3.Unpaved.Outline.Color": "#111111",
+    "Street.Category3.Bridge.Color": "#0D0D0D59",
+    "Street.Category3.Arrow.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16.5,
+      "#1C222600",
+      17,
+      "#1C2226"
+    ],
+    "Street.Category3.Bridge.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      13,
+      0,
+      13,
+      1,
+      20,
+      1
+    ],
+    "Street.Category3.Toll.Outline.Color": "#111111",
+    "Street.Category3.Ramp.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      3,
+      14,
+      3,
+      15,
+      4,
+      16,
+      5,
+      17,
+      6,
+      18,
+      12,
+      19,
+      20,
+      20,
+      32
+    ],
+    "Street.Category3.Arrow.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16.5,
+      "#06080A00",
+      17,
+      "#3C332A"
+    ],
+    "Street.Category3.Arrow.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16.5,
+      "#06080A00",
+      17,
+      "#3C332A"
+    ],
+    "Street.Category4.Ramp.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      15.25,
+      0,
+      16,
+      0.5
+    ],
+    "Street.Category4.Unpaved.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.5,
+      "#111111",
+      16,
+      "#000000"
+    ],
+    "Street.Category4.Bridge.Color": "#0D0D0D59",
+    "Street.Category4.Arrow.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17,
+      "#1C222600",
+      17.5,
+      "#1C2226"
+    ],
+    "Street.Category4.Bridge.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      1,
+      16,
+      1,
+      17,
+      1.5,
+      20,
+      1.5
+    ],
+    "Street.Category4.Toll.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15.5,
+      "#111111",
+      16,
+      "#000000"
+    ],
+    "Street.Category4.Ramp.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      3,
+      14,
+      3,
+      15,
+      4,
+      16,
+      5,
+      17,
+      6,
+      18,
+      12,
+      19,
+      20,
+      20,
+      32
+    ],
+    "Street.Category4.Arrow.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17,
+      "#06080A00",
+      17.5,
+      "#3C332A"
+    ],
+    "Street.Category4.Arrow.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17,
+      "#06080A00",
+      17.5,
+      "#3C332A"
+    ],
+    "Street.Pedestrian.Construction.Dash.Length": [
+      "step",
+      [
+        "zoom"
+      ],
+      0,
+      15,
+      0,
+      16,
+      0,
+      17,
+      0,
+      18,
+      0,
+      19,
+      23.55,
+      20,
+      34.7,
+      21,
+      55,
+      22,
+      80,
+      23,
+      110,
+      24,
+      180
+    ],
+    "Street.Pedestrian.Unpaved.Outline.Color": "#00000000",
+    "Street.Walkway.Unpaved.Outline.Color": "#00000000",
+    "Street.Walkway.Bridge.Outline.Width": 0,
+    "Street.Walkway.Bridge.Color": "#07070714",
+    "Street.Category1.Label.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#D7D7D7",
+      17.5,
+      "#E9E9E9",
+      17.5,
+      "#E1E1E1"
+    ],
+    "Street.Category1.Label.Unpaved.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Category1.Label.Toll.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Category2.Label.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#D7D7D7",
+      17.5,
+      "#E9E9E9",
+      17.5,
+      "#E1E1E1"
+    ],
+    "Street.Category2.Label.Unpaved.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Category2.Label.Toll.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Category3.Label.Unpaved.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Category3.Label.Toll.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Category4.Label.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#D7D7D7",
+      17.5,
+      "#E9E9E9",
+      17.5,
+      "#E1E1E1"
+    ],
+    "Street.Category4.Label.Unpaved.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Category4.Label.Toll.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Category4.Label.Ramp.Size": 0,
+    "Street.Pedestrian.Label.Unpaved.Color": "#70747A",
+    "Street.Pedestrian.Label.Unpaved.Outline.Color": "#0000007F",
+    "Street.Walkway.Label.Unpaved.Outline.Color": "#0000007F",
+    "ExtrudedBuilding.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17,
+      "#1F1F1F00",
+      17,
+      "#1F1F1F7E",
+      19.5,
+      "#1F1F1FCE"
+    ],
+    "ExtrudedBuilding.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.6,
+      "#17171700",
+      17.6,
+      "#171717E6"
+    ],
+    "CongestionZone.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      "#7A007A33",
+      9,
+      "#7A007A26",
+      10,
+      "#7A007A26",
+      11,
+      "#7A007A21",
+      12,
+      "#7A007A1A",
+      13,
+      "#7A007A0D",
+      20,
+      "#7A007A03"
+    ],
+    "Street.Category0.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      "#444444",
+      6,
+      "#525252",
+      9,
+      "#6E6E6E",
+      13,
+      "#828282",
+      13,
+      "#BFBFBF"
+    ],
+    "Street.Category0.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      0,
+      5,
+      0.5,
+      8,
+      1,
+      14,
+      1,
+      16,
+      2,
+      18,
+      2
+    ],
+    "Street.Category0.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      "#444444",
+      6,
+      "#525252",
+      9,
+      "#6E6E6E",
+      13,
+      "#828282",
+      13,
+      "#BFBFBF"
+    ],
+    "Street.Category0.TollTunnel.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      "#303030",
+      6,
+      "#464646",
+      9,
+      "#616161",
+      13,
+      "#747474",
+      13,
+      "#979797"
+    ],
+    "Street.Category0.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      4,
+      0,
+      5,
+      0,
+      6,
+      1,
+      7,
+      2,
+      9,
+      2,
+      10,
+      2,
+      11,
+      2,
+      12,
+      4,
+      13,
+      4,
+      14,
+      6,
+      15,
+      8,
+      16.5,
+      16,
+      17.5,
+      22,
+      18,
+      30,
+      19.5,
+      44,
+      20.5,
+      80
+    ],
+    "Street.Category1.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      "#444444",
+      6,
+      "#525252",
+      9,
+      "#6E6E6E",
+      13,
+      "#828282",
+      13,
+      "#BFBFBF"
+    ],
+    "Street.Category1.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      9,
+      0,
+      10,
+      0.5
+    ],
+    "Street.Category1.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      "#2C2C2C",
+      6,
+      "#383838",
+      9,
+      "#515151",
+      13,
+      "#515151",
+      13,
+      "#909090"
+    ],
+    "Street.Category1.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      "#444444",
+      6,
+      "#525252",
+      9,
+      "#6E6E6E",
+      13,
+      "#828282",
+      13,
+      "#BFBFBF"
+    ],
+    "Street.Category1.TollTunnel.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      "#1D1D1D",
+      6,
+      "#292929",
+      9,
+      "#3A3A3A",
+      13,
+      "#484848",
+      13,
+      "#676767"
+    ],
+    "Street.Category1.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      0,
+      6,
+      1,
+      8,
+      2,
+      9,
+      2,
+      10,
+      2,
+      11,
+      2,
+      12,
+      3,
+      13,
+      3,
+      14,
+      5,
+      15,
+      6,
+      16,
+      13,
+      17.5,
+      18,
+      18,
+      25,
+      19.5,
+      36,
+      20,
+      56
+    ],
+    "Street.Category2.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      9,
+      "#454545",
+      13,
+      "#565656",
+      16,
+      "#7E7E7E"
+    ],
+    "Street.Category2.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      13,
+      0,
+      13,
+      1,
+      20,
+      1
+    ],
+    "Street.Category2.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      9,
+      "#454545",
+      13,
+      "#565656",
+      16,
+      "#7E7E7E"
+    ],
+    "Street.Category2.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      9,
+      "#454545",
+      13,
+      "#565656",
+      16,
+      "#7E7E7E"
+    ],
+    "Street.Category2.TollTunnel.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      9,
+      "#262626",
+      13,
+      "#2C2C2C",
+      16,
+      "#404040"
+    ],
+    "Street.Category3.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      "#444444",
+      13,
+      "#4E4E4E",
+      16,
+      "#6E6E6E"
+    ],
+    "Street.Category3.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      13,
+      0,
+      13,
+      1,
+      20,
+      1
+    ],
+    "Street.Category3.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      "#444444",
+      13,
+      "#4E4E4E",
+      16,
+      "#6E6E6E"
+    ],
+    "Street.Category3.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      "#444444",
+      13,
+      "#4E4E4E",
+      16,
+      "#6E6E6E"
+    ],
+    "Street.Category3.TollTunnel.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      12,
+      "#1D1D1D",
+      13,
+      "#2B2B2B",
+      16,
+      "#373737"
+    ],
+    "Street.Category4.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#222222",
+      13.4,
+      "#2B2B2B",
+      14,
+      "#2B2B2B",
+      16.5,
+      "#4D4D4D"
+    ],
+    "Street.Category4.Outline.Width": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      15.25,
+      0,
+      16,
+      0.5
+    ],
+    "Street.Category4.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#222222",
+      13.4,
+      "#2B2B2B",
+      14,
+      "#2B2B2B",
+      16.5,
+      "#4D4D4D"
+    ],
+    "Street.Category4.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#222222",
+      13.4,
+      "#2B2B2B",
+      14,
+      "#2B2B2B",
+      16.5,
+      "#4D4D4D"
+    ],
+    "Street.Category4.TollTunnel.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      14,
+      "#1D1D1D",
+      16.5,
+      "#252525"
+    ],
+    "Street.Walkway.Color": "#262626",
+    "Street.Walkway.Tunnel.Color": "#262626",
+    "Street.Walkway.Unpaved.Color": "#262626",
+    "Street.Pedestrian.Color": "#262626",
+    "Street.Pedestrian.Unpaved.Color": "#262626",
+    "Chairlift.Line.Color": "#8595AC",
+    "Chairlift.Line.Width": 0,
+    "Chairlift.Label.Color": "#BECDE4",
+    "Chairlift.Label.Outline.Color": "#141515",
+    "SkiRun.Line.Color": "#3A464E",
+    "SkiRun.Line.Width": 0,
+    "SkiRun.Outline.Color": "#B4BBDC",
+    "SkiRun.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      0,
+      15.5,
+      0,
+      15.5,
+      10,
+      17,
+      14
+    ],
+    "SkiRun.Label.Color": "#969CA3",
+    "SkiRun.Label.Outline.Color": "#14151A",
+    "Transit.Label.Color": "#000000",
+    "Transit.HighSpeed.Line.Color": "#486097",
+    "Transit.HighSpeed.Label.Outline.Color": "#486097",
+    "Transit.Intercity.Line.Color": "#486097",
+    "Transit.Intercity.Label.Outline.Color": "#486097",
+    "Transit.Regional.Line.Color": "#486097",
+    "Transit.Regional.Label.Outline.Color": "#486097",
+    "Transit.Suburban.Line.Color": "#007031",
+    "Transit.Suburban.Label.Outline.Color": "#007031",
+    "Transit.Train.Line.Color": "#486097",
+    "Transit.Train.Label.Outline.Color": "#486097",
+    "Transit.Ferry.Line.Color": "#154A7A",
+    "Transit.Ferry.Label.Outline.Color": "#154A7A",
+    "Transit.Fallback.Line.Color": "#486097",
+    "Transit.Fallback.Label.Outline.Color": "#486097",
+    "PTFeature.POI.TransitStop.Label.Color": "#7795C9",
+    "PTFeature.POI.TransitStop.Label.Outline.Color": "#00001F",
+    "PTFeature.Street.Category0.Label.Outline.Color": "#040709",
+    "PTFeature.Street.Category1.Label.Outline.Color": "#040709",
+    "PTFeature.Street.Category2.Label.Outline.Color": "#090D0F",
+    "PTFeature.Street.Category3.Label.Outline.Color": "#090D0F",
+    "PTFeature.Street.Category4.Label.Outline.Color": "#020607",
+    "PTFeature.Street.Category0.Label.Toll.Outline.Color": "#040709",
+    "PTFeature.Street.Category1.Label.Toll.Outline.Color": "#040709",
+    "PTFeature.Street.Category2.Label.Toll.Outline.Color": "#090D0F",
+    "PTFeature.Street.Category3.Label.Toll.Outline.Color": "#090D0F",
+    "PTFeature.Street.Category4.Label.Toll.Outline.Color": "#020607",
+    "ParkingArea.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      "#16161600",
+      15,
+      "#161616"
+    ],
+    "CityCenter.Class6.Label.Outline.Color": "#000000",
+    "CityCenter.Class7.Label.Outline.Color": "#000000",
+    "Street.Category0.TollBridge.Color": "#0D0D0D59",
+    "Street.Category1.TollBridge.Color": "#0D0D0D59",
+    "Street.Category2.TollBridge.Color": "#0D0D0D59",
+    "Street.Category3.TollBridge.Color": "#0D0D0D59",
+    "Street.Category4.TollBridge.Color": "#0D0D0D59",
+    "Street.Category0.TollTunnel.Centerline.Color": "#3E3E3E",
+    "Street.Category0.Label.Toll.Color": "#FFFFFF",
+    "Street.Category1.Label.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#D7D7D7",
+      17.5,
+      "#E9E9E9",
+      17.5,
+      "#E1E1E1"
+    ],
+    "Street.Category2.Label.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#D7D7D7",
+      17.5,
+      "#E9E9E9",
+      17.5,
+      "#E1E1E1"
+    ],
+    "Street.Category3.Label.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#FDFDFD",
+      17.5,
+      "#FBF9F9",
+      17.5,
+      "#FDFCFC"
+    ],
+    "Street.Category4.Label.Toll.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#D7D7D7",
+      17.5,
+      "#E9E9E9",
+      17.5,
+      "#E1E1E1"
+    ],
+    "Street.Category4.ParkingLot.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16,
+      "#211F1F",
+      17.5,
+      "#232323",
+      17.6,
+      "#2C2C2C"
+    ],
+    "Street.Category4.ParkingLot.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      15,
+      "#11111100",
+      16,
+      "#111111",
+      17.5,
+      "#000000"
+    ],
+    "Rail.Outline.Color": "#2C2C2B",
+    "Ocean.Label.Outline.Color": "#000000D0",
+    "Sea.Label.Outline.Color": "#000000D0",
+    "Fjord.Label.Color": "#68788F",
+    "Fjord.Label.Outline.Color": "#000000D0",
+    "Strait.Label.Color": "#68788F",
+    "Strait.Label.Outline.Color": "#000000D0",
+    "Beach.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      9.9,
+      0,
+      11.4,
+      0,
+      11.4,
+      15,
+      13,
+      18,
+      15,
+      20,
+      16,
+      28
+    ],
+    "Ferry.Label.Outline.Color": "#02101F",
+    "IndustrialComplex.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      14,
+      0,
+      14,
+      16,
+      15,
+      18
+    ],
+    "MilitaryBase.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      0,
+      6,
+      0,
+      6,
+      0,
+      12,
+      0,
+      14.9,
+      0,
+      15,
+      15,
+      16,
+      15,
+      20,
+      15
+    ],
+    "Sea.Label.Color": "#68788F",
+    "Ocean.Label.Color": "#68788F",
+    "BayHarbor.Label.Color": "#68788F",
+    "BayHarbor.Label.Outline.Color": "#0000007F",
+    "River.Color": "#0E1E2D",
+    "CanalWaterChannel.Color": "#0E1E2D",
+    "IntermittentRiver.Color": "#0E1E2D",
+    "Street.Category0.Toll.Outline.Color": "#121212",
+    "Street.Category0.Toll.Centerline.Color": "#777777",
+    "Street.Category0.Unpaved.Outline.Color": "#121212",
+    "Street.Category0.Arrow.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16,
+      "#343C4500",
+      16.5,
+      "#343C45"
+    ],
+    "Street.Category0.Label.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#D7D7D7",
+      17.5,
+      "#E9E9E9",
+      17.5,
+      "#E1E1E1"
+    ],
+    "Street.Category0.Label.Unpaved.Outline.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      17.5,
+      "#000000",
+      17.5,
+      "#474747"
+    ],
+    "Street.Pedestrian.Tunnel.Color": "#262626",
+    "Street.Pedestrian.Bridge.Outline.Width": 0,
+    "Street.Pedestrian.Bridge.Color": "#00000000",
+    "Street.Category3.Label.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      "#D7D7D7",
+      17.5,
+      "#E9E9E9",
+      17.5,
+      "#E1E1E1"
+    ],
+    "Street.Category0.Unpaved.Color": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      "#444444",
+      6,
+      "#525252",
+      9,
+      "#6E6E6E",
+      13,
+      "#828282",
+      13,
+      "#BFBFBF"
+    ],
+    "Chairlift.Label.Size": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      13,
+      8,
+      15,
+      10,
+      17,
+      14,
+      19,
+      18
+    ]
+  }
+}
