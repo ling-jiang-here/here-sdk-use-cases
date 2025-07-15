@@ -10,3 +10,16 @@ Note: If your AAR version is different than the version shown in the _Developer 
 2) Open Android Studio and sync the project.
 
 Please do not forget: To run the app, you need to add your HERE SDK credentials to the `MainActivity.java` file. More information can be found in the _Get Started_ section of the _Developer Guide_.
+
+Play instructions:
+-------------------
+
+SDK 4.23.0 introduced a new field "accessRestrictionReasons" in https://www.here.com/docs/bundle/sdk-for-android-navigate-api-reference/page/com/here/sdk/search/EVChargingPool.html
+
+This demo app demonstrates how to get this field values for charge stations.
+
+Note that:
+
+1) For offline EV rich attributes, also enable LayerConfiguration.Feature.EV in SDKOptions.layerConfiguration.
+
+2) Use offline search engine such as offlineSearchEngine.searchByCategory() because it is populated only for offline search.
