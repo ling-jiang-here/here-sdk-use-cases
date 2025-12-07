@@ -1,0 +1,70 @@
+
+# ---- OS cruft ----
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---- Logs & temp ----
+*.log
+logs/
+tmp/
+temp/
+.cache/
+.gradle/
+.local/
+*.pid
+
+# ---- Android/Gradle ----
+build/
+**/build/
+.cxx/
+.externalNativeBuild/
+captures/
+.gradle/
+.gradle-cache/
+local.properties
+*.iml
+
+# ---- IDEs ----
+.idea/
+.vscode/
+*.ipr
+*.iws
+
+# ---- Artifacts & packages ----
+# App/Bundles
+*.apk
+*.aab
+*.ap_
+# Libraries
+*.aar
+*.jar
+*.war
+*.ear
+
+# ---- Kotlin/Java ----
+out/
+target/
+*.class
+
+# ---- Test & coverage ----
+*.ec
+coverage/
+.jacoco/
+.test_results/
+.androidide/
+
+# ---- Dependency caches ----
+# (keep lockfiles; exclude caches/installable content)
+**/.m2/repository/
+# If you intentionally vendor dependencies, remove this line.
+
+# ---- Secrets & credentials (examples; ensure you manage via env/CI) ----
+*.keystore
+*.jks
+*.pem
+*.p12
+*.keystore.properties
+*.signing.properties
+.env
+.env.*
