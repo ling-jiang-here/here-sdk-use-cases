@@ -1,4 +1,10 @@
-The Navigation example app shows how to calculate a route from A to B and how to start turn-by-turn navigation with voice commands. You can find how this is done in [NavigationExample.swift](Navigation/NavigationExample.swift). It also shows how to set a tracking view when navigation is stopped.
+Added Route Import feature to the SDK example app Navigation in:
+* [RouteCalculator.swift](Navigation/RouteCalculator.swift)
+* [NavigationAppLogic.swift](Navigation/NavigationAppLogic.swift)
+Route Import by locations or route handle from the Routing API query:  
+`https://router.hereapi.com/v8/routes?apikey={{your_api_key}}&origin=52.524465%2C13.382334&destination=52.525301%2C13.399844&return=polyline%2Csummary%2Cactions%2Cinstructions%2CrouteHandle&transportMode=car`
+
+The base Navigation example app shows how to calculate a route from A to B and how to start turn-by-turn navigation with voice commands. You can find how this is done in [NavigationExample.swift](Navigation/NavigationExample.swift). It also shows how to set a tracking view when navigation is stopped.
 
 Build instructions:
 -------------------
